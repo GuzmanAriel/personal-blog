@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Ariel Guzman's Blog</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+    </head>
+    <body>
+        <div id="horizontal-menu" class="ui inverted labeled icon menu">
+            <div class="ui container">
+                <div class="header item active"><a href="http://theoriginalarielguzman.com/" target="_blank"><i class="home icon"></i>AG Portfolio</a></div>
+                <a href="/blogs" class="item"><i class="sticky note outline icon"></i>All Blogs</a>
+                <a href="/blogs/FEDev" class="item"><i class="code icon"></i>FrontEndDev</a>
+                <a href="/blogs/sports" class="item"><i class="soccer icon"></i>Sports</a>
+                <a href="/blogs/other" class="item"><i class="soccer icon"></i>Other</a>
+                <% if(currentUser){ %>
+                    <a href="/blogs/new" class="item">New Post</a>
+                    <a href="/logout" class="item">Logout</a>
+                    <p class="item">You are logged in</p>
+                <% } %>
+            </div>
+        </div>
+        <div id="vertical-menu" class="ui inverted vertical icon menu">
+          <div class="header item"><i class="home icon"></i>Ariel Guzman</div>
+                <a href="/blogs" class="item"><i class="sticky note outline icon"></i>All Blogs</a>
+                <a href="/blogs/FEDev" class="item"><i class="code icon"></i>FrontEndDev</a>
+                <a href="/blogs/sports" class="item"><i class="soccer icon"></i>Sports</a>
+                <a href="/blogs/other" class="item"><i class="soccer icon"></i>Other</a>
+                <% if(currentUser){ %>
+                    <a href="/blogs/new" class="item">New Post</a>
+                    <a href="/logout" class="item">Logout</a>
+                    <p class="item">You are logged in</p>
+                <% } %>
+            </div>
+        </div>

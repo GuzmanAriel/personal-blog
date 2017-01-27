@@ -1,0 +1,42 @@
+i.icon{
+    font-size: 2em;
+}
+
+.container.main{
+    margin-top:7.0em;
+}
+
+#delete{
+    display:inline;
+}
+
+.ui.large.image{
+    width:100%;
+}
+
+#name{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.user{
+    display:inline;
+}
+
+.right{
+    float:right;
+}
+
+#vertical-menu{
+    display:none;
+    margin:0;
+}
+
+@media (max-width: 768px) {
+    #vertical-menu{
+        display:block;
+    }
+    #horizontal-menu{
+        display:none;
+    }
+}
