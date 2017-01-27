@@ -14,7 +14,8 @@ var postRoutes = require("./routes/posts"),
     userRoutes = require("./routes/user")
     
 //App Config
-mongoose.connect("mongodb://localhost/restful_blog_app");
+//mongoose.connect("mongodb://localhost/restful_blog_app");
+mongoose.connect("mongodb://Ariel:heyheyhey@ds019946.mlab.com:19946/blog");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
