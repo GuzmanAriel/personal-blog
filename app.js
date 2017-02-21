@@ -15,8 +15,8 @@ var postRoutes = require("./routes/posts"),
     
 
 //App Config
-mongoose.connect(process.env.DATABASEURL);
-//mongoose.connect("mongodb://Ariel:heyheyhey@ds019946.mlab.com:19946/blog");
+var url = process.env.DATABASEURL || "mongodb://localhost/restful_blog_app";
+mongoose.connect(url);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
