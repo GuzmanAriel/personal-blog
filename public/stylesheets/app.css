@@ -65,6 +65,9 @@ i.icon{
 .ui.header{
     color:white;
 }
+.ui.header.show{
+    color:black;    
+}
 
 @media (max-width: 768px) {
     #vertical-menu{

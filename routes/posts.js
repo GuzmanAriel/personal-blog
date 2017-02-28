@@ -86,7 +86,7 @@ router.get("/blogs/:id", function(req, res){
     });
 });
 
-router.get("/blogs:id/edit", function(req, res){
+router.get("/blogs/:id/edit", function(req, res){
     Blog.findById(req.params.id,function(err, foundBlog){
         if(err){
             res.redirect("/blogs");
@@ -97,7 +97,7 @@ router.get("/blogs:id/edit", function(req, res){
 });
 
 //UPDATE ROUTE
-router.put("/blogs:id", function(req, res){
+router.put("/blogs/:id", function(req, res){
     req.body.blog.body = req.sanitize(req.body.blog.body);
     Blog.findByIdAndUpdate(req.params.id, req.body.blog, function(err, updatedBlog){
         if(err){
